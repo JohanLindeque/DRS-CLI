@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace DRS_CLI.Utilities
 {
-    class Menu
+    public static class Menu
     {
         
-        public void PrintMainMenu()
+        public static void PrintMainMenu()
         {
             Console.Clear();
             Console.WriteLine("Main menu");
-            Console.WriteLine("1");
+            Console.WriteLine("1. Driver Standings");
             Console.WriteLine("2");
             Console.WriteLine("3");
             Console.WriteLine("4");
             Console.WriteLine("Enter option:");
         }
 
-        public void PrintNavigationMenu(out bool isRunning)
+        public static void PrintNavigationMenu(out bool isRunning)
         {
             isRunning = true;
             Console.Clear();

@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRS CLI", "DRS CLI\DRS CLI.csproj", "{59D767DD-F5D8-4FBC-AA47-2D929798F476}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JolpiF1Library", "JolpiF1Library\JolpiF1Library.csproj", "{8FA77E63-056A-437D-B628-3412A4C05EA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{59D767DD-F5D8-4FBC-AA47-2D929798F476}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59D767DD-F5D8-4FBC-AA47-2D929798F476}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59D767DD-F5D8-4FBC-AA47-2D929798F476}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FA77E63-056A-437D-B628-3412A4C05EA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FA77E63-056A-437D-B628-3412A4C05EA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FA77E63-056A-437D-B628-3412A4C05EA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FA77E63-056A-437D-B628-3412A4C05EA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

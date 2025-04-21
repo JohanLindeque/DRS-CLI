@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DRS_CLI.Model
+namespace JolpiF1Library.Model
 {
     public class DriverStandingsResponse
     {

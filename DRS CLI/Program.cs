@@ -1,4 +1,6 @@
 ﻿using DRS_CLI.Utilities;
+using JolpiF1Library;
+using JolpiF1Library.Utilities;
 
 namespace DRS_CLI
 {
@@ -7,7 +9,7 @@ namespace DRS_CLI
         static void Main(string[] args)
         {
             bool isRunning = true;
-            Menu menu = new Menu();
+            ApiHelper.InitializeClient();
 
 
             Console.WriteLine("Hello, World!");
@@ -16,22 +18,25 @@ namespace DRS_CLI
             while (isRunning)
             {
                 Console.Clear();
-                menu.PrintMainMenu();
+                Menu.PrintMainMenu();
                 string choice = Console.ReadLine();
 
                 switch (choice)
                 {
                     case "1":
                         Console.Clear();
-                        Console.WriteLine("choice");
+
+                        Console.WriteLine(ApiHelper.GetDriverStandings()); 
+
                         Console.WriteLine(" ");
-                        menu.PrintNavigationMenu(out isRunning);
+                        Console.WriteLine("choice");
+                        Menu.PrintNavigationMenu(out isRunning);
                         break;
 
                     case "2":
                         Console.Clear();
                         Console.WriteLine("choice");
-                        menu.PrintNavigationMenu(out isRunning);
+                        Menu.PrintNavigationMenu(out isRunning);
                         break;
 
                     default:
