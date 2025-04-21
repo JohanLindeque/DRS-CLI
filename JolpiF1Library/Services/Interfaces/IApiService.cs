@@ -9,7 +9,7 @@ namespace JolpiF1Library.Services.Interfaces
     public interface IApiService
     {
 
-        public void GetData(HttpClient ApiClient);
+        public Task GetData(HttpClient ApiClient);
 
         public string ProcessResponse();
 

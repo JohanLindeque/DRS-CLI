@@ -13,27 +13,24 @@ namespace JolpiF1Library.Utilities
     public static class ApiHelper
     {
         private static readonly IApiService _apiService;
-        public static HttpClient ApiClient { get; set; } 
-        private static readonly string  _baseURL = "https://api.jolpi.ca/ergast/f1/";
-
-        private static string _respond;
+        public static HttpClient ApiClient { get; set; }
+        private static readonly string  _baseURL = $"https://api.jolpi.ca/ergast/f1/current/";
 
         public static void InitializeClient()
         {
             ApiClient = new HttpClient();
-            ApiClient.BaseAddress = new Uri(_baseURL);
+            // ApiClient.BaseAddress = new Uri(_baseURL);
             ApiClient.DefaultRequestHeaders.Accept.Clear();
             ApiClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
 
         }
 
-        public static string GetDriverStandings()
+        public static async Task<string> GetDriverStandings()
         {
             DriverStandingsService driverStandingEndpoint = new DriverStandingsService();
-            driverStandingEndpoint.GetData(ApiClient);
-            _respond = driverStandingEndpoint.ProcessResponse();
-            return _respond;
+            await driverStandingEndpoint.GetData(ApiClient);
+            return driverStandingEndpoint.ProcessResponse();
         }
 
 
