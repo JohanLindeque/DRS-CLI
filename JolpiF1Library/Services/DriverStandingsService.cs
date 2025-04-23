@@ -20,7 +20,8 @@ namespace JolpiF1Library.Services
 
         public async Task GetData(HttpClient ApiClient)
         {
-            using (HttpResponseMessage response = await ApiClient.GetAsync("https://api.jolpi.ca/ergast/f1/current/driverstandings/"))
+            // using (HttpResponseMessage response = await ApiClient.GetAsync("https://api.jolpi.ca/ergast/f1/current/driverstandings/"))
+            using (HttpResponseMessage response = await ApiClient.GetAsync($"{_endpoint}/"))
             {
                 if (response.IsSuccessStatusCode)
                 {

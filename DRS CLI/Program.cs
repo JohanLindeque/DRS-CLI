@@ -18,7 +18,7 @@ namespace DRS_CLI
 
             while (isRunning)
             {
-                // Console.Clear();
+                
                 Menu.PrintMainMenu();
                 string choice = Console.ReadLine();
 
@@ -40,6 +40,11 @@ namespace DRS_CLI
                         ;
                         Console.WriteLine("choice");
                         Menu.PrintNavigationMenu(out isRunning);
+                        break;
+
+                    case "5":
+                        Console.Clear();
+                        isRunning = false;
                         break;
 
                     default:
