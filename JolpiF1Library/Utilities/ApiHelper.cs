@@ -37,6 +37,13 @@ namespace JolpiF1Library.Utilities
             return constructorStandingEndpoint.ProcessResponse();
         }
 
+        public static async Task<string> GetSeasonRaces()
+        {
+            SeasonRacesService seasonRacesEndpoint = new SeasonRacesService();
+            await seasonRacesEndpoint.GetData(ApiClient);
+            return seasonRacesEndpoint.ProcessResponse();
+        }
+
 
 
     }

@@ -15,10 +15,10 @@ namespace DRS_CLI.Utilities
             PrintLogo();
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Main menu");
-            Console.WriteLine("1. Driver Standings");
-            Console.WriteLine("2. Constructor Standings");
-            //Console.WriteLine("3");
-            //Console.WriteLine("4");
+            Console.WriteLine("1. Driver Standings this season");
+            Console.WriteLine("2. Constructor Standings this season");
+            Console.WriteLine("3. Race calendar this season");
+
             Console.WriteLine("E. Exit");
             Console.WriteLine("Enter option:");
             Console.ResetColor();

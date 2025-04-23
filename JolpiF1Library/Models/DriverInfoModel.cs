@@ -12,7 +12,5 @@ namespace JolpiF1Library.Models
         public string Name { get; set; }
         public string Points { get; set; }
         public string Constructor { get; set; }
-
-
     }
 }

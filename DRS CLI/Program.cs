@@ -11,7 +11,6 @@ namespace DRS_CLI
         {
             bool isRunning = true;
             ApiHelper.InitializeClient();
-            //Console.SetWindowSize(100, 100);
             Console.WindowWidth = 150;
             Console.WindowHeight = 40;
 
@@ -53,8 +52,22 @@ namespace DRS_CLI
                         Menu.PrintNavigationMenu(out isRunning);
                         break;
 
-                    case "E":
+                    case "3":
                         Console.Clear();
+                        Menu.PrintLogo();
+
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("Current Race Calendar:");
+                        Console.ResetColor();
+
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine(await ApiHelper.GetSeasonRaces());
+                        Console.ResetColor();
+
+                        Menu.PrintNavigationMenu(out isRunning);
+                        break;
+
+                    case "E":
                         isRunning = false;
                         break;
 
@@ -65,11 +78,8 @@ namespace DRS_CLI
             }
 
 
-
             Console.WriteLine("Good bye.");
             Console.ReadKey();
-
-
         }
     }
 }
