@@ -16,10 +16,10 @@ namespace DRS_CLI.Utilities
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Main menu");
             Console.WriteLine("1. Driver Standings");
-            Console.WriteLine("2");
+            Console.WriteLine("2. Constructor Standings");
             //Console.WriteLine("3");
             //Console.WriteLine("4");
-            Console.WriteLine("5. Exit");
+            Console.WriteLine("E. Exit");
             Console.WriteLine("Enter option:");
             Console.ResetColor();
 
@@ -31,8 +31,8 @@ namespace DRS_CLI.Utilities
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine(" ");
             Console.WriteLine("Navigation menu");
-            Console.WriteLine("1 back");
-            Console.WriteLine("2 exit");
+            Console.WriteLine("1. Back");
+            Console.WriteLine("E. Exit");
             Console.WriteLine("Enter option:");
             Console.ResetColor();
 
@@ -45,7 +45,7 @@ namespace DRS_CLI.Utilities
                     isRunning = true;
                     break;
 
-                case "2":
+                case "E":
                     isRunning = false;
                     break;
 
@@ -55,24 +55,28 @@ namespace DRS_CLI.Utilities
 
         }
 
-        private static void PrintLogo()
+        public static void PrintLogo()
         {
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine(@"__/\\\\\\\\\\\\_______/\\\\\\\\\_________/\\\\\\\\\\\____________________/\\\\\\\\\__/\\\______________/\\\\\\\\\\\___________         ");
-            Console.WriteLine(@" _\/\\\////////\\\___/\\\///////\\\_____/\\\/////////\\\_______________/\\\////////__\/\\\_____________\/////\\\///____________        ");
+            Console.WriteLine(@"        __/\\\\\\\\\\\\_______/\\\\\\\\\_________/\\\\\\\\\\\____________________/\\\\\\\\\__/\\\______________/\\\\\\\\\\\___________         ");
+            Console.WriteLine(@"         _\/\\\////////\\\___/\\\///////\\\_____/\\\/////////\\\_______________/\\\////////__\/\\\_____________\/////\\\///____________        ");
             
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine(@"  _\/\\\______\//\\\_\/\\\_____\/\\\____\//\\\______\///______________/\\\/___________\/\\\_________________\/\\\_______________       ");
-            Console.WriteLine(@"   _\/\\\_______\/\\\_\/\\\\\\\\\\\/______\////\\\____________________/\\\_____________\/\\\_________________\/\\\_______________      ");
+            Console.WriteLine(@"          _\/\\\______\//\\\_\/\\\_____\/\\\____\//\\\______\///______________/\\\/___________\/\\\_________________\/\\\_______________       ");
+            Console.WriteLine(@"           _\/\\\_______\/\\\_\/\\\\\\\\\\\/______\////\\\____________________/\\\_____________\/\\\_________________\/\\\_______________      ");
 
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(@"    _\/\\\_______\/\\\_\/\\\//////\\\_________\////\\\________________\/\\\_____________\/\\\_________________\/\\\_______________     ");
-            Console.WriteLine(@"     _\/\\\_______\/\\\_\/\\\____\//\\\___________\////\\\_____________\//\\\____________\/\\\_________________\/\\\_______________    ");
+            Console.WriteLine(@"            _\/\\\_______\/\\\_\/\\\//////\\\_________\////\\\________________\/\\\_____________\/\\\_________________\/\\\_______________     ");
+            Console.WriteLine(@"             _\/\\\_______\/\\\_\/\\\____\//\\\___________\////\\\_____________\//\\\____________\/\\\_________________\/\\\_______________    ");
 
             Console.ForegroundColor = ConsoleColor.Magenta;
-            Console.WriteLine(@"      _\/\\\_______/\\\__\/\\\_____\//\\\___/\\\______\//\\\_____________\///\\\__________\/\\\_________________\/\\\_______________   ");
-            Console.WriteLine(@"       _\/\\\\\\\\\\\\/___\/\\\______\//\\\_\///\\\\\\\\\\\/________________\////\\\\\\\\\_\/\\\\\\\\\\\\\\\__/\\\\\\\\\\\___________  ");
-            Console.WriteLine(@"        _\////////////_____\///________\///____\///////////_____________________\/////////__\///////////////__\///////////____________ ");
+            Console.WriteLine(@"              _\/\\\_______/\\\__\/\\\_____\//\\\___/\\\______\//\\\_____________\///\\\__________\/\\\_________________\/\\\_______________   ");
+            Console.WriteLine(@"               _\/\\\\\\\\\\\\/___\/\\\______\//\\\_\///\\\\\\\\\\\/________________\////\\\\\\\\\_\/\\\\\\\\\\\\\\\__/\\\\\\\\\\\___________  ");
+            Console.WriteLine(@"                _\////////////_____\///________\///____\///////////_____________________\/////////__\///////////////__\///////////____________ ");
+            Console.WriteLine(" ");
             Console.WriteLine(" ");
 
             Console.ResetColor();

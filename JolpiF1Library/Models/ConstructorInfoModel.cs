@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace JolpiF1Library.Models
 {
-    class DriverInfoModel
+    class ConstructorInfoModel
     {
         public string Position { get; set; }
         public string Name { get; set; }
         public string Points { get; set; }
-        public string Constructor { get; set; }
-
-
     }
 }

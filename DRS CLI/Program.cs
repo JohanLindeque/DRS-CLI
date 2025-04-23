@@ -11,10 +11,9 @@ namespace DRS_CLI
         {
             bool isRunning = true;
             ApiHelper.InitializeClient();
-
-
-            Console.WriteLine("Hello, World!");
-
+            //Console.SetWindowSize(100, 100);
+            Console.WindowWidth = 150;
+            Console.WindowHeight = 40;
 
             while (isRunning)
             {
@@ -26,23 +25,35 @@ namespace DRS_CLI
                 {
                     case "1":
                         Console.Clear();
+                        Menu.PrintLogo();
+
                         Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine(await ApiHelper.GetDriverStandings());
+                        Console.WriteLine("Current Driver Standings:");
                         Console.ResetColor();
 
-                        Console.WriteLine(" ");
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine(await ApiHelper.GetDriverStandings());
+                        Console.ResetColor();
 
                         Menu.PrintNavigationMenu(out isRunning);
                         break;
 
                     case "2":
-                         Console.Clear();
-                        ;
-                        Console.WriteLine("choice");
+                        Console.Clear();
+                        Menu.PrintLogo();
+
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("Current Constructor Standings:");
+                        Console.ResetColor();
+
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine(await ApiHelper.GetConstructorStandings());
+                        Console.ResetColor();
+
                         Menu.PrintNavigationMenu(out isRunning);
                         break;
 
-                    case "5":
+                    case "E":
                         Console.Clear();
                         isRunning = false;
                         break;

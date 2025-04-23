@@ -21,8 +21,6 @@ namespace JolpiF1Library.Utilities
             ApiClient.BaseAddress = new Uri(_baseURL);
             ApiClient.DefaultRequestHeaders.Accept.Clear();
             ApiClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
-
         }
 
         public static async Task<string> GetDriverStandings()
@@ -30,6 +28,13 @@ namespace JolpiF1Library.Utilities
             DriverStandingsService driverStandingEndpoint = new DriverStandingsService();
             await driverStandingEndpoint.GetData(ApiClient);
             return driverStandingEndpoint.ProcessResponse();
+        }
+
+        public static async Task<string> GetConstructorStandings()
+        {
+            ConstructorStandingsService constructorStandingEndpoint = new ConstructorStandingsService();
+            await constructorStandingEndpoint.GetData(ApiClient);
+            return constructorStandingEndpoint.ProcessResponse();
         }
 
 

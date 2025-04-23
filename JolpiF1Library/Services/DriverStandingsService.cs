@@ -13,7 +13,6 @@ namespace JolpiF1Library.Services
     class DriverStandingsService : IApiService
     {
         DriverStandingsModel currentDriverStandings;
-        private string _apiResponse;
 
         private string _endpoint = "driverstandings";
 
@@ -46,6 +45,7 @@ namespace JolpiF1Library.Services
                 {
                     Position = standing.Position,
                     Name = $"{standing.Driver.GivenName} {standing.Driver.FamilyName}",
+                    Points = standing.Points,
                     Constructor = standing.Constructors[0].Name
                 });
             }
@@ -55,11 +55,10 @@ namespace JolpiF1Library.Services
         private string GetFormattedDriverStanding(List<DriverInfoModel> listDriverInfo)
         {
             StringBuilder formatedText = new StringBuilder();
-            formatedText.AppendLine("Current Driver Standings:");
 
-            foreach (var driverinfo in listDriverInfo)
+            foreach (var driverInfo in listDriverInfo)
             {
-                formatedText.AppendLine($"{driverinfo.Position}. {driverinfo.Name} [{driverinfo.Constructor}]");
+                formatedText.AppendLine($"{driverInfo.Position}. {driverInfo.Name} [{driverInfo.Constructor}] Points: {driverInfo.Points}");
             }
 
             return formatedText.ToString();
