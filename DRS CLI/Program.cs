@@ -11,8 +11,8 @@ namespace DRS_CLI
         {
             bool isRunning = true;
             ApiHelper.InitializeClient();
-            Console.WindowWidth = 150;
-            Console.WindowHeight = 40;
+            // Console.WindowWidth = 150;
+            // Console.WindowHeight = 40;
 
             while (isRunning)
             {

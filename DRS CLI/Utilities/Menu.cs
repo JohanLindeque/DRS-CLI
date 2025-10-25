@@ -59,6 +59,9 @@ namespace DRS_CLI.Utilities
         {
             Console.WriteLine(" ");
             Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
 
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine(@"        __/\\\\\\\\\\\\_______/\\\\\\\\\_________/\\\\\\\\\\\____________________/\\\\\\\\\__/\\\______________/\\\\\\\\\\\___________         ");
@@ -77,7 +80,8 @@ namespace DRS_CLI.Utilities
             Console.WriteLine(@"               _\/\\\\\\\\\\\\/___\/\\\______\//\\\_\///\\\\\\\\\\\/________________\////\\\\\\\\\_\/\\\\\\\\\\\\\\\__/\\\\\\\\\\\___________  ");
             Console.WriteLine(@"                _\////////////_____\///________\///____\///////////_____________________\/////////__\///////////////__\///////////____________ ");
             Console.WriteLine(" ");
-            Console.WriteLine(" ");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("                                                                                                                               By Johan Lindeque");
 
             Console.ResetColor();
         }
