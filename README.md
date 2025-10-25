@@ -2,7 +2,8 @@
 
 A intuitive command-line tool built in C# that lets you stay on top of the current Formula 1 season — right from your terminal.
 
-![image](https://github.com/user-attachments/assets/9b076306-2eff-44c1-9242-5f9206179c59)
+<img width="1035" height="570" alt="image" src="https://github.com/user-attachments/assets/84632aaf-52f8-4fea-b76d-cdfd1a0a42e3" />
+
 
 
 Powered by the [Jolpica-f1 API](https://github.com/jolpica/jolpica-f1/blob/main/docs/README.md), this app gives you real-time access to:
