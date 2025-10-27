@@ -1,9 +1,9 @@
 #DRS CLI - 🏎️ F1 CLI App
 
-A intuitive command-line tool built in C# that lets you stay on top of the current Formula 1 season — right from your terminal.
+A command-line application for Formula 1 enthusiasts that delivers real-time race data directly to your terminal. Integrates with the Jolpica-F1 API to display current-season driver standings, constructor standings, and the complete race calendar with up-to-date information.
+
 
 <img width="1035" height="570" alt="image" src="https://github.com/user-attachments/assets/84632aaf-52f8-4fea-b76d-cdfd1a0a42e3" />
-
 
 
 Powered by the [Jolpica-f1 API](https://github.com/jolpica/jolpica-f1/blob/main/docs/README.md), this app gives you real-time access to:
@@ -26,7 +26,7 @@ Clone and Run:
 🧰 Tech Stack
 Language: C#
 Runtime: .NET
-API:   [Jolpica-f1 API](https://github.com/jolpica/jolpica-f1/blob/main/docs/README.md)
+REST API:   [Jolpica-f1 API](https://github.com/jolpica/jolpica-f1/blob/main/docs/README.md)
 
 
 
